@@ -7,14 +7,9 @@
                 'icon' => 'fa-tachometer-alt'
             ],
             [
-                'name' => 'Listagem',
-                'url' => '/admin/listagem',
-                'icon' => 'fa-align-left'
-            ],
-            [
-                'name' => 'Formulários',
-                'url' => '/admin/formularios',
-                'icon' => 'fa-table'
+                'name' => 'Usuários',
+                'url' => '/admin/users',
+                'icon' => 'fa-users'
             ]
         ]
     ];
