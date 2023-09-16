@@ -19,6 +19,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')->group(function() {
 
+    /*
+        Routes Admins
+    */
+    Route::put('/admins/{id}/update-image', [AdminController::class, 'uploadFile'])->name('admins.upload.file');
+    Route::get('/admins/{id}/image', [AdminController::class, 'changeImage'])->name('admins.change.image');
+    Route::resource('/admins', AdminController::class);
+
+    /*
+        Routes Users
+    */
+
     Route::put('/users/{id}/update-image', [UserController::class, 'uploadFile'])->name('users.upload.file');
     Route::get('/users/{id}/image', [UserController::class, 'changeImage'])->name('users.change.image');
     Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('users.edit');
@@ -29,7 +40,7 @@ Route::prefix('admin')->group(function() {
     Route::delete('/users/{id}/delete', [UserController::class, 'destroy'])->name('users.destroy');
     Route::get('/users', [UserController::class, 'index'])->name('users.index');
 
-    Route::get('/',[AdminController::class, 'index'])->name('admin.home');
+    Route::get('/',[DashboardController::class, 'index'])->name('dashboard.home');
 });
 
 Route::get('/', function () {

@@ -10,6 +10,11 @@
                 'name' => 'Usuários',
                 'url' => '/admin/users',
                 'icon' => 'fa-users'
+            ],
+            [
+                'name' => 'Admins',
+                'url' => '/admin/admins',
+                'icon' => 'fa-robot'
             ]
         ]
     ];
