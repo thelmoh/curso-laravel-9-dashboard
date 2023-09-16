@@ -22,11 +22,8 @@ class UserController extends Controller
     public function index(Request $request) 
     {
         $users = $this->service->getAll(
-            filter: $request->get('filter', '')
+            filter: $request->filter ?? ''
         );
-        
-        //dd($users);
-
         return view('admin.users.index', compact('users'));
     }
 
@@ -85,7 +82,6 @@ class UserController extends Controller
         $path = $uploadFile->store($request->image, 'users');
         
         if (!$this->service->update($id, ['image' => $path])){
-            dd("FAIL");
             return back();
         }
 
