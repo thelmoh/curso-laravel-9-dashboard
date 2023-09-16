@@ -6,6 +6,7 @@
         <div class="w-full my-6 pr-0 lg:pr-2">
             <div class="leading-loose">
                 <form class="p-10 bg-white rounded shadow-xl" action="{{ route('users.upload.file', $user->id) }}" method="POST" enctype="multipart/form-data">
+                    @include('admin.includes.alerts')
                     @csrf
                     @method('PUT')
                     <div class="mt-2">

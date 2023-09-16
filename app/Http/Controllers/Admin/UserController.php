@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreImage;
 use App\Http\Requests\StoreUser;
 use App\Http\Requests\UserUpdate;
 use App\Models\User;
@@ -77,7 +78,7 @@ class UserController extends Controller
         return view('admin.users.change-image', compact('user'));
     }
 
-    public function uploadFile(Request $request, UploadFile $uploadFile, $id)
+    public function uploadFile(StoreImage $request, UploadFile $uploadFile, $id)
     {
         $path = $uploadFile->store($request->image, 'users');
         
