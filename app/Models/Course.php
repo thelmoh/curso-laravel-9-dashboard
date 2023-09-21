@@ -2,12 +2,16 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Course extends Model
 {
     use HasFactory;
+
+    public $incrementing = false; 
 
     protected $fillable = [
         'name', 'description', 'image', 'available'
@@ -17,4 +21,22 @@ class Course extends Model
     {
         return $this->hasMany(Module::class);
     }
+
+    protected function createdAt(): Attribute
+    {
+        return Attribute::make(
+            get: fn($value) => Carbon::make($value)->format('d/m/Y'),
+        );
+    }
+
+        /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'id' => 'string',
+        'image' => 'string'
+    ];
+    
 }

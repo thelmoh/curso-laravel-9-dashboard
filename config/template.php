@@ -15,6 +15,11 @@
                 'name' => 'Admins',
                 'url' => '/admin/admins',
                 'icon' => 'fa-robot'
+            ],
+            [
+                'name' => 'Cursos',
+                'url' => '/admin/courses',
+                'icon' => 'fa-video'
             ]
         ]
     ];
