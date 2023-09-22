@@ -77,27 +77,6 @@ class CourseController extends Controller
         return redirect()->route('courses.index');
     }
 
-    public function changeImage($id)
-    {
-        if (!$course = $this->service->findById($id))
-        {
-            return redirect()->back();
-        }
-
-        return view('admin.courses.change-image', compact('admin'));
-    }
-
-    public function uploadFile(StoreImage $request, UploadFile $uploadFile, $id)
-    {
-        $path = $uploadFile->store($request->image, 'admins');
-        
-        if (!$this->service->update($id, ['image' => $path])){
-            return back();
-        }
-
-        return redirect()->route('courses.index');
-    }
-
     public function show($id)
     {
         if (!$course = $this->service->findById($id))
@@ -105,7 +84,7 @@ class CourseController extends Controller
             return redirect()->back();
         }
 
-        return view('admin.courses.show', compact('admin'));
+        return view('admin.courses.show', compact('course'));
     }
 
     public function destroy($id)
