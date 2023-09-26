@@ -50,12 +50,12 @@
                                     <span class="relative">Detalhes</span>
                                 </span>
                             </a>
-                            {{-- <a href="{{ route('lesson.index', $course->id) }}">
+                            <a href="{{ route('lessons.index', $module->id) }}">
                                 <span class="relative inline-block px-3 py-1 font-semibold text-blue-900 leading-tight">
                                     <span aria-hidden class="absolute inset-0 bg-blue-200 opacity-50 rounded-full"></span>
                                     <span class="relative">Aulas</span>
                                 </span>
-                            </a> --}}
+                            </a>
                         </td>
                     </tr>
                     @empty

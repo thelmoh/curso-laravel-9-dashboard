@@ -13,6 +13,16 @@ class Course extends Model
 
     public $incrementing = false; 
 
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'id' => 'string',
+        'image' => 'string'
+    ];
+
     protected $fillable = [
         'name', 'description', 'image', 'available'
     ];
@@ -28,15 +38,4 @@ class Course extends Model
             get: fn($value) => Carbon::make($value)->format('d/m/Y'),
         );
     }
-
-        /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
-    protected $casts = [
-        'id' => 'string',
-        'image' => 'string'
-    ];
-    
 }
