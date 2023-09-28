@@ -20,6 +20,11 @@
                 'name' => 'Cursos',
                 'url' => '/admin/courses',
                 'icon' => 'fa-video'
+            ],
+            [
+                'name' => 'Dúvidas',
+                'url' => '/admin/supports',
+                'icon' => 'fa-question-circle'                
             ]
         ]
     ];

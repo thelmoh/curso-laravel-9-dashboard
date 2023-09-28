@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\{
     DashboardController,
     LessonController,
     ModuleController,
+    SupportController,
     UserController,
 };
 use Illuminate\Support\Facades\Route;
@@ -22,6 +23,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('admin')->group(function() {
+
+    /*
+        Routes Supports
+    */
+    Route::get('/supports', [SupportController::class, 'index'])->name('supports.index');
+
     /*
         Routes Lessons
     */
