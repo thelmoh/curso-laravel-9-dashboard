@@ -6,9 +6,11 @@ use App\Http\Controllers\Admin\{
     DashboardController,
     LessonController,
     ModuleController,
+    ReplySupportController,
     SupportController,
     UserController,
 };
+use App\Models\ReplySupport;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,8 +27,14 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('admin')->group(function() {
 
     /*
+        Routes ReplySupports
+    */
+    Route::post('/supports/{id}/reply', [ReplySupportController::class, 'store'])->name('replies.store');
+
+    /*
         Routes Supports
     */
+    Route::get('/supports/{id}', [SupportController::class, 'show'])->name('supports.show');
     Route::get('/supports', [SupportController::class, 'index'])->name('supports.index');
 
     /*

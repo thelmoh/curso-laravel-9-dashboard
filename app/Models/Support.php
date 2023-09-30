@@ -9,6 +9,8 @@ class Support extends Model
 {
     use HasFactory;
 
+    public $incrementing = false; 
+
     protected $fillable = [
         'status', 'description', 'user_id', 'lesson_id'
     ];
@@ -21,5 +23,10 @@ class Support extends Model
     public function lesson()
     {
         return $this->belongsTo(Lesson::class);
+    }
+
+    public function replies()
+    {
+        return $this->hasMany(ReplySupport::class);
     }
 }

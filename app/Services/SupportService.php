@@ -17,10 +17,10 @@ class SupportService
 
     public function getSupports(string|null $status = 'P')
     {
-        return $this->repository->getByStatus($status);
+        return convertArrayToObject($this->repository->getByStatus($status));
     }
     
-    public function findById(string $id): object|null
+    public function getSupport(string $id): object|null
     {
         return $this->repository->findById($id);
     }

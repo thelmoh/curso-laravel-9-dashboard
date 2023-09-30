@@ -10,6 +10,8 @@ class Module extends Model
 {
     use HasFactory, UuidTrait;
 
+    public $incrementing = false; 
+
     protected $fillable = [
         'name', 'course_id'
     ];
@@ -34,7 +36,4 @@ class Module extends Model
         'id' => 'string',
         'course_id' => 'string'
     ];
-    
-    public $incrementing = false; 
-
 }

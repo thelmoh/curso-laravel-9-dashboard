@@ -17,12 +17,8 @@ class SupportRepository implements SupportRepositoryInterface
     public function getByStatus(string $status = 'P'): array
     {
         $supports = $this->model
-            ->where(function ($query) use ($status) {
-                if ($status) {
-                    $query->where('status', $status);
-                }
-            })
-            //->with()
+            ->where('status', $status)
+            ->with('user', 'lesson')
             ->get();
 
         return $supports->toArray();
@@ -30,7 +26,9 @@ class SupportRepository implements SupportRepositoryInterface
 
     public function findById(string $id): object|null
     {
-        return $this->model->find($id);
+        return $this->model
+                    ->with('user', 'lesson', 'replies.user', 'replies.admin')
+                    ->find($id);
     }
 
     public function create(array $data): object
