@@ -24,7 +24,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('admin')->group(function() {
+Route::prefix('admin')
+        ->middleware('auth')
+        ->group(function() {
 
     /*
         Routes ReplySupports
@@ -86,3 +88,6 @@ Route::prefix('admin')->group(function() {
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+require __DIR__.'/auth.php';

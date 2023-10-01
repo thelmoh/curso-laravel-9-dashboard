@@ -5,7 +5,7 @@
 <div class="grid grid-cols-12 gap-6 mb-6">
     <div class="col-span-12 sm:col-span-6 xl:col-span-3">
         <div
-            class="md:rounded dark:bg-gray-900/70 block bg-white border border-gray-100 dark:border-gray-900 mx-6 md:mx-0 rounded">
+            class="md:rounded block bg-white border border-gray-100 mx-6 md:mx-0 rounded">
             <!---->
             <div class="p-6">
                 <div class="justify-between items-center flex mb-3">
@@ -25,7 +25,7 @@
                         <div class="relative inline-block text-left">
                             <div><button id="headlessui-menu-button-1" type="button"
                                     aria-haspopup="true" aria-expanded="false"><button
-                                        class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap ring-blue-700 focus:outline-none transition-colors duration-150 border bg-gray-100 text-black border-gray-200 dark:border-gray-400 hover:bg-gray-200 p-1 focus:ring rounded"
+                                        class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap ring-blue-700 focus:outline-none transition-colors duration-150 border bg-gray-100 text-black border-gray-200 hover:bg-gray-200 p-1 focus:ring rounded"
                                         type="button"><span
                                             class="inline-flex justify-center items-center w-6 h-6"><svg
                                                 viewBox="0 0 24 24" width="16" height="16"
@@ -48,7 +48,7 @@
                 <div class="justify-between items-center flex">
                     <div class="flex shrink-1 grow-9 items-center justify-center">
                         <div>
-                            <h3 class="text-lg leading-tight text-gray-500 dark:text-gray-400">
+                            <h3 class="text-lg leading-tight text-gray-500">
                                 Clients</h3>
                             <h1 class="text-3xl leading-tight font-semibold">
                                 <div>512</div>
@@ -71,7 +71,7 @@
     </div>
     <div class="col-span-12 sm:col-span-6 xl:col-span-3">
         <div
-            class="md:rounded dark:bg-gray-900/70 block bg-white border border-gray-100 dark:border-gray-900 mx-6 md:mx-0 rounded">
+            class="md:rounded block bg-white border border-gray-100 mx-6 md:mx-0 rounded">
             <!---->
             <div class="p-6">
                 <div class="justify-between items-center flex mb-3">
@@ -91,7 +91,7 @@
                         <div class="relative inline-block text-left">
                             <div><button id="headlessui-menu-button-3" type="button"
                                     aria-haspopup="true" aria-expanded="false"><button
-                                        class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap ring-blue-700 focus:outline-none transition-colors duration-150 border bg-gray-100 text-black border-gray-200 dark:border-gray-400 hover:bg-gray-200 p-1 focus:ring rounded"
+                                        class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap ring-blue-700 focus:outline-none transition-colors duration-150 border bg-gray-100 text-black border-gray-200 hover:bg-gray-200 p-1 focus:ring rounded"
                                         type="button"><span
                                             class="inline-flex justify-center items-center w-6 h-6"><svg
                                                 viewBox="0 0 24 24" width="16" height="16"
@@ -114,7 +114,7 @@
                 <div class="justify-between items-center flex">
                     <div class="flex shrink-1 grow-9 items-center justify-center">
                         <div>
-                            <h3 class="text-lg leading-tight text-gray-500 dark:text-gray-400">Sales
+                            <h3 class="text-lg leading-tight text-gray-500">Sales
                             </h3>
                             <h1 class="text-3xl leading-tight font-semibold">
                                 <div>$7,770</div>
@@ -137,7 +137,7 @@
     </div>
     <div class="col-span-12 sm:col-span-6 xl:col-span-3">
         <div
-            class="md:rounded dark:bg-gray-900/70 block bg-white border border-gray-100 dark:border-gray-900 mx-6 md:mx-0 rounded">
+            class="md:rounded block bg-white border border-gray-100 mx-6 md:mx-0 rounded">
             <!---->
             <div class="p-6">
                 <div class="justify-between items-center flex mb-3">
@@ -157,7 +157,7 @@
                         <div class="relative inline-block text-left">
                             <div><button id="headlessui-menu-button-5" type="button"
                                     aria-haspopup="true" aria-expanded="false"><button
-                                        class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap ring-blue-700 focus:outline-none transition-colors duration-150 border bg-gray-100 text-black border-gray-200 dark:border-gray-400 hover:bg-gray-200 p-1 focus:ring rounded"
+                                        class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap ring-blue-700 focus:outline-none transition-colors duration-150 border bg-gray-100 text-black border-gray-200 hover:bg-gray-200 p-1 focus:ring rounded"
                                         type="button"><span
                                             class="inline-flex justify-center items-center w-6 h-6"><svg
                                                 viewBox="0 0 24 24" width="16" height="16"
@@ -180,7 +180,7 @@
                 <div class="justify-between items-center flex">
                     <div class="flex shrink-1 grow-9 items-center justify-center">
                         <div>
-                            <h3 class="text-lg leading-tight text-gray-500 dark:text-gray-400">
+                            <h3 class="text-lg leading-tight text-gray-500">
                                 Performance</h3>
                             <h1 class="text-3xl leading-tight font-semibold">
                                 <div>256%</div>
@@ -203,7 +203,7 @@
     </div>
     <div class="col-span-12 sm:col-span-6 xl:col-span-3">
         <div
-            class="md:rounded dark:bg-gray-900/70 block bg-white border border-gray-100 dark:border-gray-900 mx-6 md:mx-0 rounded">
+            class="md:rounded block bg-white border border-gray-100 mx-6 md:mx-0 rounded">
             <!---->
             <div class="p-6">
                 <div class="justify-between items-center flex mb-3">
@@ -217,7 +217,7 @@
                         <div class="relative inline-block text-left">
                             <div><button id="headlessui-menu-button-7" type="button"
                                     aria-haspopup="true" aria-expanded="false"><button
-                                        class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap ring-blue-700 focus:outline-none transition-colors duration-150 border bg-gray-100 text-black border-gray-200 dark:border-gray-400 hover:bg-gray-200 p-1 focus:ring rounded"
+                                        class="inline-flex cursor-pointer justify-center items-center whitespace-nowrap ring-blue-700 focus:outline-none transition-colors duration-150 border bg-gray-100 text-black border-gray-200 hover:bg-gray-200 p-1 focus:ring rounded"
                                         type="button"><span
                                             class="inline-flex justify-center items-center w-6 h-6"><svg
                                                 viewBox="0 0 24 24" width="16" height="16"
@@ -240,7 +240,7 @@
                 <div class="justify-between items-center flex">
                     <div class="flex shrink-1 grow-9 items-center justify-center">
                         <div>
-                            <h3 class="text-lg leading-tight text-gray-500 dark:text-gray-400">
+                            <h3 class="text-lg leading-tight text-gray-500">
                                 Alerts</h3>
                             <h1 class="text-3xl leading-tight font-semibold">
                                 <div>24</div>
