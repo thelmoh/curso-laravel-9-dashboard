@@ -12,6 +12,7 @@ class ReplySupportObserver
      */
     public function creating(ReplySupport $replySupport): void
     {
+        $replySupport->admin_id = auth()->user()->id;
         $replySupport->id = Str::uuid();
     }
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Services\SupportService;
 use Illuminate\Http\Request;
+use App\Enum\SupportEnum;
 
 class SupportController extends Controller
 {
@@ -17,11 +18,15 @@ class SupportController extends Controller
 
     public function index(Request $request) 
     {
-        $supports = $this->service->getSupports(
-            status: $request->get('status', 'P')
-        );
 
-        return view('admin.supports.index', compact('supports'));
+        $supports = $this->service->getSupports(
+                status: $request->get('status', 'P'),
+                page: (int) $request->get('page', 1),
+            );
+
+        $statusOptions = SupportEnum::cases();
+
+        return view('admin.supports.index', compact('supports','statusOptions'));
     }
 
     public function show($id) {
